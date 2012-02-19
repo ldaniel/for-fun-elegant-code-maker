@@ -1,0 +1,26 @@
+﻿body
+{
+    background-image: url('../content/images/ElegantBackround.jpg');    
+}
+
+@font-face
+{
+    font-family: ElegantFont;
+    src: url('../content/fonts/Respective.ttf');
+}
+
+@font-face
+{
+    font-family: ElegantCodeFont;
+    src: url('../content/fonts/Elegant.ttf');
+}
+
+.elegantTitle
+{
+    position: relative;    
+    font-family: ElegantFont;
+    font-size: 50pt;
+    color: #A5CFF9;
+    left: 10px;
+    top: 0px;
+}
