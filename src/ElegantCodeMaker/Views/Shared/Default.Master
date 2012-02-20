@@ -13,11 +13,6 @@
     <script type="text/javascript" charset="utf-8">
         $(function () { $("label").inFieldLabels(); });
 	</script>
-    <style>
-	    .ui-progressbar-value {
-            background-image: url('/content/css/ui-lightness/images/pbar-ani.gif');
-        }
-	</style>
 </head>
 
 <body>

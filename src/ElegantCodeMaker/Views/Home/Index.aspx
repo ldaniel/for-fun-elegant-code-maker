@@ -11,10 +11,27 @@
         }
 	</style>
 	<script>
+	    var progressbarMsgs = new Array();
+	    progressbarMsgs[0] = "Retrieving code...";
+	    progressbarMsgs[1] = "Analyzing anti-patterns...";
+	    progressbarMsgs[2] = "Check for code bad-smells...";
+	    progressbarMsgs[3] = "Analyzing complex structures...";
+	    progressbarMsgs[4] = "Generating elegant code, waiting...";
+	    var count = 0;
+
 	    $(function () {
-	        $("#progressbar").progressbar({
-	            value: 59
-	        });
+	        $("#progressbar").progressbar({ value: 0 });
+	        setTimeout(updateProgress, 500);
+
+	        function updateProgress() {
+	            var progress;
+	            progress = $("#progressbar").progressbar("option", "value");
+	            if (progress < 100) {
+	                if ((progress % 3) == 0) $("#progressbarMsg").text(progressbarMsgs[count++]);
+	                $("#progressbar").progressbar("option", "value", progress + 5);
+	                setTimeout(updateProgress, 500);
+	            }
+	        }
 	    });
 	</script>
     <div id="header">
@@ -35,6 +52,8 @@
             <p><input type="submit" value="Make elegant code now!" class="submitcode" /></p>
         </fieldset>
     </form>
-    <div class="body"><h2>Analyzing you code...</h2></div>
+    <div class="body"><h2>Analyzing you code...</h2>
     <div id="progressbar"></div>
+    <div id="progressbarMsg"></div>
+    </div>
 </asp:Content>
