@@ -82,9 +82,31 @@
     <Content Include="bin\System.Web.WebPages.Deployment.dll" />
     <Content Include="bin\System.Web.WebPages.dll" />
     <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="Content\css\default.css" />
+    <Content Include="Content\css\reset.css" />
+    <Content Include="Content\css\ui-lightness\images\pbar-ani.gif" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\css\ui-lightness\jquery-ui-1.8.17.custom.css" />
     <Content Include="Content\images\ElegantBackround.jpg" />
+    <Content Include="Content\images\link_servicemore.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="Scripts\jquery.infieldlabel.js" />
+    <Content Include="Scripts\jquery.infieldlabel.min.js" />
     <Content Include="Scripts\syntaxhighlighter\scripts\clipboard.swf" />
     <Content Include="Scripts\syntaxhighlighter\scripts\shAutoloader.js" />
     <Content Include="Scripts\syntaxhighlighter\scripts\shBrushAppleScript.js" />
@@ -132,10 +154,7 @@
     <Content Include="Scripts\syntaxhighlighter\styles\shThemeMidnight.css" />
     <Content Include="Scripts\syntaxhighlighter\styles\shThemeRDark.css" />
     <Content Include="Views\Home\ElegantCode.aspx" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\jquery-1.4.4.js" />
-    <Content Include="Scripts\jquery-1.4.4.min.js" />
-    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Content\css\elegant.css" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -153,7 +172,7 @@
     <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Views\Home\About.aspx" />
     <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Shared\Default.Master" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup />

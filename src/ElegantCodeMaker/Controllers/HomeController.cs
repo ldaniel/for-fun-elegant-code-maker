@@ -25,7 +25,7 @@ namespace ElegantCodeMaker.Controllers
 
         public ActionResult ElegantCode(string poorCode)
         {
-            string elegantCode = "/* Código elegante para todos */ \n\r" 
+            string elegantCode = "/* Elegant code for everyone =) */ \n\r" 
                 + HttpWebRequestHelper.GetResponseFromUrl(poorCode);
             ViewData["YourCode"] = elegantCode;
             return View();
