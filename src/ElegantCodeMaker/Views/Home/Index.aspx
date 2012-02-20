@@ -30,8 +30,8 @@
 	                if ((progress % 3) == 0) $("#progressbarMsg").text(progressbarMsgs[count++]);
 	                $("#progressbar").progressbar("option", "value", progress + 5);
 	                setTimeout(updateProgress, 500);
-	            } else if (progress == 100) {
-	                $("#submit").click();
+	            } else {
+	                $("#submitcode").click();
 	            }
 	        }
 	    });
@@ -51,7 +51,7 @@
                 view <a href="https://gist.github.com/mine" target="_blank">my gists</a>
             </p>
             <br/>
-            <p><input type="submit" value="Make elegant code now!" class="submitcode" /></p>
+            <p><input type="submit" id="submitcode" value="Make elegant code now!" class="submitcode" /></p>
         </fieldset>
     </form>
     <div class="body"><h2>Analyzing you code...</h2>
