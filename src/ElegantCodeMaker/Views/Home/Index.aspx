@@ -30,6 +30,8 @@
 	                if ((progress % 3) == 0) $("#progressbarMsg").text(progressbarMsgs[count++]);
 	                $("#progressbar").progressbar("option", "value", progress + 5);
 	                setTimeout(updateProgress, 500);
+	            } else if (progress == 100) {
+	                $("#submit").click();
 	            }
 	        }
 	    });
