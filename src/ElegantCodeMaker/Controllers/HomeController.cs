@@ -25,12 +25,17 @@ namespace ElegantCodeMaker.Controllers
 
         public ActionResult ElegantCode(string poorCode)
         {
-            string elegantCode = "/* Elegant code for everyone =) */ \n\r" 
-                + HttpWebRequestHelper.GetResponseFromUrl(poorCode);
-            ViewData["YourCode"] = elegantCode;
-            return View();
-        }
+            if (!String.IsNullOrEmpty(poorCode))
+            {
+                string elegantCode = "/* Elegant code for everyone =) */ \n\r"
+                                     + HttpWebRequestHelper.GetResponseFromUrl(poorCode);
+                ViewData["YourCode"] = elegantCode;
+                return View();
+            }
 
+            return View("Index");
+        }
+    
         public ActionResult About()
         {
             return View();
