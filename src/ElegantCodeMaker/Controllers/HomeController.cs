@@ -10,7 +10,7 @@ namespace ElegantCodeMaker.Controllers
         public ActionResult Index(string code)
         {
             if (!String.IsNullOrEmpty(code))
-            {
+            {   
                 var routeValueDictionary = new RouteValueDictionary(
                     new
                     {

@@ -35,7 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.WebPages" />
     <Reference Include="System.Web.Helpers" />
     <Reference Include="System" />
@@ -50,8 +52,12 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -66,6 +72,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\System.Web.Abstractions.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Routing.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
     <Content Include="Content\images\ElegantBackround.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -142,8 +158,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Content\fonts\Elegant.ttf" />
-    <None Include="Content\fonts\Respective.ttf" />
+    <Content Include="Content\fonts\Elegant.ttf" />
+    <Content Include="Content\fonts\Respective.ttf" />
     <Content Include="Views\Shared\Elegant.Master" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

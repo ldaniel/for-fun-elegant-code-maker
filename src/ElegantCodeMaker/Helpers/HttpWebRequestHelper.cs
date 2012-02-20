@@ -6,12 +6,12 @@ namespace ElegantCodeMaker.Helpers
 {
     public static class HttpWebRequestHelper
     {
-        public static string GetResponseFromUrl(string URL)
+        public static string GetResponseFromUrl(string url)
         {
-            string responseReturn = string.Empty;
-            URL = URL.Replace("https://gist.github.com/", "https://gist.github.com/raw/");
-
-            var request = (HttpWebRequest)WebRequest.Create(URL);
+            string responseReturn = null;
+            url = url.Replace("https://gist.github.com/", "https://gist.github.com/raw/");
+                        
+            var request = (HttpWebRequest)WebRequest.Create(url);
             request.MaximumAutomaticRedirections = 4;
             request.MaximumResponseHeadersLength = 4;
             request.Credentials = CredentialCache.DefaultCredentials;
@@ -19,9 +19,12 @@ namespace ElegantCodeMaker.Helpers
             using (var response = (HttpWebResponse)request.GetResponse())
             {
                 Stream receiveStream = response.GetResponseStream();
-                using (var readStream = new StreamReader(receiveStream, Encoding.UTF8))
+                if (receiveStream != null)
                 {
-                    responseReturn = readStream.ReadToEnd();                    
+                    using (var readStream = new StreamReader(receiveStream, Encoding.UTF8))
+                    {
+                        responseReturn = readStream.ReadToEnd();
+                    }
                 }
             }
 

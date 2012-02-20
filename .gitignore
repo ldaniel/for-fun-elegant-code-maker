@@ -1,4 +1,4 @@
-bin/
+_ReSharper.ElegantCodeMaker/*.* bin/
 obj/
 *.suo
 *.user

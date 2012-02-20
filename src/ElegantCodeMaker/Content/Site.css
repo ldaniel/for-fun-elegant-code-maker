@@ -15,8 +15,12 @@
     src: url('../content/fonts/Elegant.ttf');
 }
 
-.elegantTitle
-{
+.page {
+    
+}
+
+.elegantTitle 
+{    
     position: relative;    
     font-family: ElegantFont;
     font-size: 50pt;
