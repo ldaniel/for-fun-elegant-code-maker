@@ -7,7 +7,7 @@ html
 
 body
 {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     padding: 0 0 40px 0;
     background: #eee;
@@ -167,12 +167,13 @@ tt
     font-size: 0.8em;
 }
 
-.submitcode 
+.submit
 {    
     font-family: Arial;
     color: #ffffff;
     font-size: 20px;
     padding: 10px;
+    border-radius: 16px;
     text-decoration: none;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -180,10 +181,11 @@ tt
     -moz-box-shadow: 0px 1px 3px #666666;
     text-shadow: 1px 1px 3px #666666;
     border: solid #003366 2px;
+    background: #1f98fc;
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#42aaff), to(#003366));
     background: -moz-linear-gradient(top, #42aaff, #003366);
 }
 
-.submitcode:hover {
+.submit:hover {
 	background: #42aaff;
 }

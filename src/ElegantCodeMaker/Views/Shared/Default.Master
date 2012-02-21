@@ -10,6 +10,7 @@
     <script src="<%: Url.Content("~/Scripts/jquery-1.7.1.min.js") %>" type="text/javascript"></script>
     <script src="<%: Url.Content("~/Scripts/jquery-ui-1.8.17.custom.min.js") %>" type="text/javascript"></script>
     <script src="<%: Url.Content("~/Scripts/jquery.infieldlabel.min.js") %>" type="text/javascript"></script>
+    <script src="<%: Url.Content("~/Scripts/progressBar.js") %>" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
         $(function () { $("label").inFieldLabels(); });
 	</script>
