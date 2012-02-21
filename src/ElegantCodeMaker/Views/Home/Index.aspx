@@ -9,7 +9,7 @@
     <div id="header">
         <img src="../../Content/images/analysis.png" style="float: left" />
 		<p><strong>Overview:</strong><br />
-			This is a engine that analyze and apply techniques properly to make code more elegant. 
+			This is an engine that analyzes and applies properly techniques to make code more elegant. 
             Currently supports Java and C# programming languages. Follow the instructions below.
         </p>
         <br/><br/><br/>
@@ -20,7 +20,7 @@
             <p>
                 <label for="code" style="width:500px">Put your gist code (e.g.: https://gist.github.com/1716822)</label><br />
                 <input type="text" id="code" name="code" value="<%= ViewData["Code"] %>" style="width: 500px" /><br/>
-                (view <a href="https://gist.github.com/mine" target="_blank">my gists</a> on GitHub)
+                (or view <a href="https://gist.github.com/mine" target="_blank">your gists</a> on GitHub)
             </p>
             <br/>
             <p>
