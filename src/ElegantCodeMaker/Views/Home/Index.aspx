@@ -14,7 +14,7 @@
         </p>
         <br/><br/><br/>
 	</div>
-    <div class="body"><h2>Start</h2></div>
+    <div class="body"><h2>Your code</h2></div>
     <form action="/Home/Index" accept-charset="utf-8">
         <fieldset>            
             <p>
