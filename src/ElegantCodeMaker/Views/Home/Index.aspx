@@ -5,11 +5,14 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    
     <div id="header">
+        <img src="../../Content/images/analysis.png" style="float: left" />
 		<p><strong>Overview:</strong><br />
 			This is a engine that analyze and apply techniques properly to make code more elegant. 
             Currently supports Java and C# programming languages. Follow the instructions below.
         </p>
+        <br/><br/><br/>
 	</div>
     <div class="body"><h2>Start</h2></div>
     <form action="/Home/Index" accept-charset="utf-8">
@@ -17,14 +20,20 @@
             <p>
                 <label for="code" style="width:500px">Put your gist code (e.g.: https://gist.github.com/1716822)</label><br />
                 <input type="text" id="code" name="code" value="<%= ViewData["Code"] %>" style="width: 500px" /><br/>
-                view <a href="https://gist.github.com/mine" target="_blank">my gists</a>
+                (view <a href="https://gist.github.com/mine" target="_blank">my gists</a> on GitHub)
             </p>
             <br/>
-            <p><input type="submit" id="submitcode" value="Make elegant code now!" class="submit" /></p>
+            <p>
+                <input type="button" id="callEngine" value="Make elegant code now!" class="submit" />
+                <input type="submit" id="submitcode" value="runEngine" style="display:none;" />
+            </p>
         </fieldset>
     </form>
-    <div class="body"><h2>Analyzing your code...</h2>
-    <div id="progressbar"></div>
-    <div id="progressbarMsg"></div>
+    <div id="analysisPanel" name="analysisPanel" style="display:none;">
+        <div class="body">
+            <h2>Starting engine...</h2>
+            <div id="progressbar"></div>
+            <div id="progressbarMsg"></div>
+        </div>
     </div>
 </asp:Content>
