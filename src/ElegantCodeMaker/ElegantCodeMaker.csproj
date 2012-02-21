@@ -175,9 +175,7 @@
     <Content Include="Views\Shared\Default.Master" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\fonts\Elegant.ttf" />
     <Content Include="Content\fonts\Respective.ttf" />

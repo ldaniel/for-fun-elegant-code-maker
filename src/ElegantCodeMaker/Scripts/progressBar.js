@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     $("#callEngine").click(function () {
         $("#analysisPanel").css('display', 'inline');
+        $("#callEngine").css('display', 'none');
 
         var progressbarMsgs = new Array();
         progressbarMsgs[0] = "[Retrieving code...]";
