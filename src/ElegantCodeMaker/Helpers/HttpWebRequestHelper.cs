@@ -6,12 +6,14 @@ namespace ElegantCodeMaker.Helpers
 {
     public static class HttpWebRequestHelper
     {
+        private const string gistURL = "https://gist.github.com/raw/";
+
         public static string GetResponseFromUrl(string url)
         {
             string responseReturn = null;
-            url = url.Replace("https://gist.github.com/", "https://gist.github.com/raw/");
+            string gistCode = url.Substring(url.LastIndexOf('/') + 1);
                         
-            var request = (HttpWebRequest)WebRequest.Create(url);
+            var request = (HttpWebRequest)WebRequest.Create(gistURL + gistCode);
             request.MaximumAutomaticRedirections = 4;
             request.MaximumResponseHeadersLength = 4;
             request.Credentials = CredentialCache.DefaultCredentials;
