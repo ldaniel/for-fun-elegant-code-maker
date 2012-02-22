@@ -99,8 +99,8 @@
     <Content Include="Content\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Content\css\ui-lightness\jquery-ui-1.8.17.custom.css" />
     <Content Include="Content\images\analysis.png" />
-    <Content Include="Content\images\ElegantBackround.jpg" />
     <Content Include="Content\images\link_servicemore.png" />
+    <Content Include="Content\images\YUNOGuy.png" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.17.custom.min.js" />

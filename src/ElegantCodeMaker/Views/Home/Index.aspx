@@ -5,7 +5,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    
     <div id="header">
         <img src="../../Content/images/analysis.png" style="float: left" />
 		<p><strong>Overview:</strong><br />
@@ -35,5 +34,6 @@
             <div id="progressbar"></div>
             <div id="progressbarMsg"></div>
         </div>
+        <br/><br/><br/>
     </div>
 </asp:Content>
