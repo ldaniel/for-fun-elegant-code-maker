@@ -1,6 +1,6 @@
 Elegant Code Maker
 ==================
-Engine able to make any code really stay elegant.
+Engine able to make any code really stay elegant. View online demo here: http://elegantcodemaker.apphb.com
 
 Yes, this is a joke!
 --------------------
